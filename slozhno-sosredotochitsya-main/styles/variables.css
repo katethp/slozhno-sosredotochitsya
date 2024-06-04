@@ -3,29 +3,47 @@
   и их переопределение под различные устройства
 */
 :root {
-  --color-pink-1: #fff1f7;
-  --color-pink-2: #f1b2ce;
-  --color-pink-3: #ffc2e6;
-  --color-pink-4: #ff8dcb;
+  --title-color: #ffc2e6;
+  --background-color: #fff1f7;
+  --navigagtion-text-color: #353430;
+  --nav-outline: rgba(53, 52, 48, 0.4);
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --subtitle-color: #353430;
+  --main-text-color: #353430;
+  --page-image: url("../images/cover-image-light.png");
+  --hyperlink-outline: #353430;
+  --decoration-color: #353430;
+} 
 
-  --color-purple-1: #db00ff;
-  --color-purple-2: #ff0070;
-  --color-purple-2-o-40: #ff007040;
-
-  --color-black-1: #000028;
-  --color-black-2: #353430;
-  --color-black-2-o-40: #35343040;
-
-  --text-color: var(--color-pink-2, #f1b2ce);
-  --brand-color: var(--color-purple-1, #db00ff);
-  --secondary-color: var(--color-purple-2, #ff0070);
-  --secondary-color-o-40: var(--color-purple-2-o-40, #ff007040);
-  --accent-color: var(--color-purple-2, #ff0070);
-  --highlight-color: var(--color-black-1, #000028);
-
-  --page-font-family: "IBM Plex mono", monospace;
-  --page-background-image: url("../images/cover-image.png");
-  --page-background-color: var(--color-black-1, #000028);
-
-  --rec-decor-visibility: visible;
+@media (prefers-color-scheme: light) {
+:root {
+  --title-color: #ffc2e6;
+  --background-color: #fff1f7;
+  --navigagtion-text-color: #353430;
+  --nav-outline: rgba(53, 52, 48, 0.4);
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --subtitle-color: #353430;
+  --main-text-color: #353430;
+  --hyperlink-outline: #353430;
+  --decoration-color: #353430;
+  --page-image: url("../images/cover-image-light.png");
 }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #db00ff;
+    --background-color: #000028;
+    --navigagtion-text-color: #ff0070;
+    --nav-outline: rgba(255, 0, 112, 0.4);
+    --accent-color: #ff0070;
+    --accent-text-color: #000028;
+    --subtitle-color: #ff0070;
+    --main-text-color: #f1b2ce;
+    --hyperlink-outline: #f1b2ce;
+    --decoration-color: #ff0070;
+    --page-image: url("../images/cover-image-dark.png");
+   }
+  }
