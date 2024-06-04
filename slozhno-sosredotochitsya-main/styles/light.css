@@ -5,45 +5,32 @@
 */
 
 .page.theme_light {
-  --accent-color: #ff8dcb;
-  --title-color: #ffc2e6;
-  --after-accent--text-color: #353430;
-  --text-color: #353430;
-  --background-color: #fff1f7;
-  --background-image: url(../images/cover-image-light.png);
-  --botton-color: #353430;
-  --title-of-section: #353430;
-  --font: "IBM Plex Mono", sans-serif;
-  --shadow-color: #ff8dcb;
-  --focus-color: #353430;
-  --shadow-color-big-size: #ff0070;
+  --text-color: var(--color-black-2, #353430);
+  --accent-color: var(--color-pink-4, #ff8dcb);
+  --brand-color: var(--color-pink-3, #ffc2e6);
+  --highlight-color: var(--color-black-2, #353430);
+  --secondary-color: var(--color-black-2, #353430);
+  --secondary-color-o-40: var(--color-black-2-o-40, #35343040);
+
+  --page-background-color: var(--color-pink-1, #fff1f7);
+  --page-background-image: url("../images/cover-image-light.png");
+
+  --rec-decor-visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_auto {
-    --accent-color: #ff8dcb;
-    --title-color: #ffc2e6;
-    --after-accent--text-color: #353430;
-    --text-color: #353430;
-    --background-color: #fff1f7;
-    --background-image: url(../images/cover-image-light.png);
-    --botton-color: #353430;
-    --title-of-section: #353430;
-    --font: "IBM Plex Mono", sans-serif;
-    --shadow-color: #ff8dcb;
-    --focus-color: #353430;
-    --shadow-color-big-size: #ff0070;
-  }
+  :root {
+    --text-color: var(--color-black-2, #353430);
+    --accent-color: var(--color-pink-4, #ff8dcb);
+    --brand-color: var(--color-pink-3, #ffc2e6);
+    --highlight-color: var(--color-black-2, #353430);
+    --secondary-color: var(--color-black-2, #353430);
+    --secondary-color-o-40: var(--color-black-2-o-40, #35343040);
 
-  .page.theme_light .decorative-element,
-  .page.theme_auto .decorative-element {
-    display: none;
-  }
+    --page-background-color: var(--color-pink-1, #fff1f7);
+    --page-background-image: url("../images/cover-image-light.png");
 
-  .header__theme-menu-button:hover {
-    cursor: pointer;
-    border: 1px solid var(--botton-color);
+    --rec-decor-visibility: hidden;
   }
 }
-
 
